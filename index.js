@@ -4,7 +4,6 @@ function submitData(name, email) {
     name: name,
     email: email
   };
-  fetch("http://localhost:3000/users", configObject);
   const configObject = {
     method: "POST",
     headers: {
@@ -24,8 +23,6 @@ function submitData(name, email) {
     document.body.innerHTML = error.message;
   });
 }
-
-
 
 
 
